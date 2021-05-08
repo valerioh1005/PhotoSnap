@@ -1,0 +1,126 @@
+.beautiful {
+
+
+    &__content {
+        padding: 6.25rem;
+
+        >h1 {
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        >p {
+            line-height: 1.7;
+        }
+
+    }
+
+   
+
+
+
+    @include breakpoint-up(medium) {
+        &__content {
+            padding: 3rem;
+
+        
+        }
+
+
+        &__col-1 {
+            background-image: url(/img/home/tablet/beautiful-stories.jpg);
+            background-size: cover;
+            background-position: center 40%;
+            background-repeat: no-repeat;
+        }
+
+
+    }
+
+    @include breakpoint-up(large) {
+        &__content {
+            margin: 3.125rem auto;
+            > h1 {
+                font-size: 3rem;
+            }
+        }
+
+        &__col-1 {
+            background-image: url(/img/home/desktop/beautiful-stories.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @include breakpoint-up(xlarge) {
+        &__content {
+            margin: 6.25rem auto;
+        }
+
+        &__col-1 {
+            background-image: url(/img/home/desktop/beautiful-stories.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @include breakpoint-up(xxlarge) {
+        &__content {
+            padding: 11rem;
+
+            >h1 {
+                font-size: 4rem;
+              
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__col-1 {
+            background-image: url(/img/home/desktop/beautiful-stories.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+
+
+    @include breakpoint-down(medium) {
+        &__content {
+            margin: 3.125rem auto;
+
+           
+
+        }
+
+        &__col-1 {
+            background-image: url(/img/home/tablet/beautiful-stories.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @include breakpoint-down(small) {
+        &__content {
+            padding: 2rem 1rem;
+            margin: 0;
+
+            > h1 {
+             font-size: 2.1rem;
+            }
+
+            >p {
+                width: 101%;
+            }
+        }
+
+    }
+
+}
+

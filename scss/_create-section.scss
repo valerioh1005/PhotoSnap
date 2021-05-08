@@ -1,0 +1,107 @@
+.create {
+  
+    &__content {
+        padding: 6.25rem;
+
+        >h1 {
+            width: 73%;
+            text-transform: uppercase;
+        }
+
+        >p {
+            line-height: 1.7;
+        }
+
+    }
+
+
+
+    @include breakpoint-up(medium) {
+        &__content {
+            padding: 3rem;
+        }
+
+        &__col-2 {
+            background-image: url(/img/home/tablet/create-and-share.jpg);
+            background-size: cover;
+            background-position: center 40%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @include breakpoint-up(large) {
+        &__content {
+            padding: 2rem;
+        }
+
+        &__col-2 {
+            background-image: url(/img/home/desktop/create-and-share.jpg);
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+
+           
+        }
+    }
+
+    @include breakpoint-up(xlarge) {
+        &__content {
+            padding: 4rem;
+        }
+
+        &__col-2 {
+            background-image: url(/img/home/desktop/create-and-share.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @include breakpoint-up(xxlarge) {
+        &__content {
+            padding: 11rem;
+
+            >h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__col-2 {
+            background-image: url(/img/home/desktop/create-and-share.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+   
+
+
+    @include breakpoint-down(small) {
+        &__content {
+            padding: 2rem 1rem;
+
+            > h1 {
+                font-size: 2.1rem;
+               }
+
+            >p {
+                width: 101%;
+            }
+        }
+
+        &__col-1 {
+            order: 2;
+        }
+
+        &__col-2 {
+            order: 1;
+        }
+
+    }
+
+}

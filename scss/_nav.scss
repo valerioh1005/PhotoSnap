@@ -1,0 +1,67 @@
+.nav {
+    background-color: $white;
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        top: 13px;
+        left: 82px;
+        width: 0;
+        height: 0;
+        border-left: 1.0625rem transparent;
+        border-right: 1.0625rem transparent;
+        border-bottom: 1.0625rem solid hsl(28, 100%, 78%), hsl(329, 36%, 59%), hsl(229, 100%, 68%);
+       
+     
+
+    }
+
+    &__links {
+
+        >a {
+            padding: 0 1rem;
+            color: $black;
+            opacity: 0.7;
+        }
+    }
+
+    &__menu {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 6px;
+
+        >span {
+            display: block;
+            width: 33px;
+            height: 3px;
+            border-radius: 5px;
+            background-color: $black;
+            opacity: 0.8;
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+
+    }
+
+    &__button {
+        background-color: $black;
+        color: $white;
+        padding: 0.7rem 2rem;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $lightGray;
+            color: $black;
+        }
+    }
+
+
+
+    @include breakpoint-down(small) {
+        justify-content: space-between;
+        padding: 0 0.4375rem;
+    }
+}

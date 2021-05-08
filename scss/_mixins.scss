@@ -1,0 +1,56 @@
+//Map Mixin for Media Queries
+
+@media (min-width: 64em) {
+    //styles go here
+}
+
+$breakpoints-up:( "small": "39em", "medium": "40em", "large": "64em", "xlarge": "87.5em", "xxlarge": "130em");
+
+$breakpoints-down:("xsmall": "33.75","small": "39em", "medium": "63em", "large": "86.5em", "xlarge": "129em");
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content
+    }
+
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content
+    }
+
+}
+
+
+
+@mixin flexy {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+   
+}
+
+ // Visibility Classes // 
+
+
+.hide-for-mobile {
+    @include breakpoint-down("small") {
+        display: none;
+    }
+
+}
+
+.hide-for-tablet {
+    @include breakpoint-up("medium") {
+        display: none;
+    }
+
+}
+
+.hide-for-desktop {
+    @include breakpoint-up("large") {
+        display: none;
+    }
+
+}
