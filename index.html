@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>PhotoSnap</title>
 </head>
 
@@ -14,8 +14,10 @@
     <!-----------Start Of Navbar----------->
     <div class="container-lg py-3">
         <nav class="nav  flex flex-ai-c flex-jc-sb">
-            <span class="nav__logo"></span>
-            <h2>PhotoSnap</h2>
+            
+            <span class="nav__logo">
+                <a href=""><img src="./img/shared/desktop/logo.svg" alt="Logo"></a>
+            </span>
 
             <div id="menuBtn" class="nav__menu hide-for-desktop hide-for-tablet flex-ai-c flex-jc-c">
                 <span></span>
@@ -44,6 +46,8 @@
                     <p>PhotoSnap is a platform for photographers and visual story tellers.
                         We make it easy to share photos, tell stories and connect with others.
                     </p>
+                    <a href="#">Get an Invite</a>
+                   <img src="./img/shared/desktop/arrow.svg" alt="Arrow">
                 </div>
 
             </div>
@@ -70,6 +74,8 @@
                         Easily add photos,text,embed maps and media from other networks.
                         Then share your stories
                     </p>
+                    <a href="#">View The Stories</a>
+                    <img src="./img/shared/desktop/arrow-2.svg" alt="arrow">
                 </div>
             </div>
 
@@ -87,6 +93,8 @@
                         audience. Our tool is designed for photographers of all levels,
                         brands, businesses you name it.
                     </p>
+                    <a href="#" class="my">View The Stories</a>
+                    <img src="./img/shared/desktop/arrow-2.svg" alt="arrow">
                 </div>
             </div>
             <div class="col-sm col-md-5 col-lg-7 g-0 design__col-2">
@@ -97,6 +105,123 @@
     </div>
     <!------------------End Of Design Section--------------->
 
+    <!------------------Start Of Stories Section--------------->
+    <div class="container-fluid">
+        <div class="row stories">
+            <div class="col-12 col-md-6 col-lg-3 g-0 stories__item">
+                <img src="/img/stories/desktop/mountains.jpg" alt="Mountains">
+                <div class="stories__text">
+                     <h3>The Mountains</h3>
+                    <p>by John Appleseed</p>
+                    <span></span>
+                    <div class="read">
+                        <p class="cta">Read Story</p>
+                        <img src="./img/shared/desktop/arrow.svg" alt="arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 g-0 stories__item">
+                <img src="/img/stories/desktop/cityscapes.jpg" alt="Skyscapers">
+                <div class="stories__text">
+                    <h3>Sunset Skyscapes</h3>
+                   <p>by Benjamin Cruz</p>
+                   <span></span>
+                   <div class="read">
+                       <p class="cta">Read Story</p>
+                       <img src="./img/shared/desktop/arrow.svg" alt="arrow">
+                   </div>
+               </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 g-0 stories__item">
+                <img src="/img/stories/desktop/18-days-voyage.jpg" alt="Voyage">
+                <div class="stories__text">
+                    <h3>18 Day Voyage</h3>
+                   <p>by Alexi Borodin</p>
+                   <span></span>
+                   <div class="read">
+                       <p class="cta">Read Story</p>
+                       <img src="./img/shared/desktop/arrow.svg" alt="arrow">
+                   </div>
+               </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 g-0 stories__item">
+                <img src="/img/stories/desktop/architecturals.jpg" alt="Architecturals">
+                <div class="stories__text">
+                    <h3>Architecturals</h3>
+                   <p>by By Samantha Brook</p>
+                   <span></span>
+                   <div class="read">
+                       <p class="cta">Read Story</p>
+                       <img src="./img/shared/desktop/arrow.svg" alt="arrow">
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!------------------End Of Stories Section--------------->
+
+    <!------------------Start Of Features Section--------------->
+    <div class="container">
+        <section class="features">
+            <div class="row text-align">
+                <div class="col-12 col-lg-4 features__item">
+                    <img src="./img/features/desktop/responsive.svg" alt="Responsive" class="features__icon">
+                    <h4 class="mt">100% Responsive</h4>
+                    <p class="mt">No matter which the device you’re on, our site is fully responsive and stories look
+                        beautiful on any screen. </p>
+                </div>
+                <div class="col-12 col-lg-4 features__item">
+                    <img src="./img/features/desktop/no-limit.svg" alt="No Limit" class="features__icon">
+                    <h4 class="mt">No Photo Upload Limit</h4>
+                    <p class="mt">Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of
+                        your stories in one go. </p>
+                </div>
+                <div class="col-12  col-lg-4 features__item">
+                    <img src="./img/features/desktop/embed.svg" alt="Embed" class="features__icon">
+                    <h4 class="mt">Available To Embed</h4>
+                    <p class="mt">Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps,
+                        and more. </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--------------------End Of Features Section--------------->
+
+    <!--------------------Start Of Footer--------------->
+    <footer class="footer bg-dark text-white">
+
+        <div class="footer__logo">
+            <img src="./img/shared/desktop/logo-2.svg" alt="logo">
+        </div>
+        <ul class="footer__links">
+            <a href="">
+                <li>Home</li>
+            </a>
+            <a href="">
+                <li>Stories</li>
+            </a>
+            <a href="">
+                <li>Features</li>
+            </a>
+            <a href="">
+                <li>Pricing</li>
+            </a>
+        </ul>
+
+        <div class="footer__invite"><a href="#">Get Invite</a>
+            <img src="./img/shared/desktop/arrow.svg" alt="Arrow">
+        </div>
+        <div class="footer__copy">Copyright 2020. All Rights Reserved</div>
+        <div class="footer__social">
+            <a href="#"><img src="./img/shared/desktop/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="./img/shared/desktop/youtube.svg" alt="YouTube"></a>
+            <a href="#"><img src="./img/shared/desktop/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="./img/shared/desktop/pinterest.svg" alt="Pinterest"></a>
+            <a href="#"><img src="./img/shared/desktop/instagram.svg" alt="Instagram"></a>
+        </div>
+
+    </footer>
+    <!--------------------End Of Footer------------------->
 </body>
 
 </html>

@@ -4,9 +4,9 @@
     //styles go here
 }
 
-$breakpoints-up:( "small": "39em", "medium": "40em", "large": "64em", "xlarge": "87.5em", "xxlarge": "130em");
+$breakpoints-up:("xsmall": "33.75em", "small": "39em", "medium": "40em", "large": "64em", "xlarge": "87.5em", "xxlarge": "130em");
 
-$breakpoints-down:("xsmall": "33.75","small": "39em", "medium": "63em", "large": "86.5em", "xlarge": "129em");
+$breakpoints-down:("xxsmall": "17.5em","xsmall": "33.75","small": "39em", "medium": "63em", "large": "86.5em", "xlarge": "129em");
 
 @mixin breakpoint-up($size) {
     @media (min-width: map-get($breakpoints-up, $size)) {

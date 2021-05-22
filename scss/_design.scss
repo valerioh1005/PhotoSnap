@@ -13,6 +13,16 @@
             line-height: 1.7;
         }
 
+        > a {
+            color: $black;
+        }
+
+        > img {
+            width: 60px;
+            height: 14px;
+            margin-left: 0.7rem;
+        }
+
     }
 
     @include breakpoint-up(medium) {
@@ -31,7 +41,7 @@
 
     @include breakpoint-up(large) {
         &__content {
-            margin: 3.125rem auto;
+          
             > h1 {
                 font-size: 3rem;
             }

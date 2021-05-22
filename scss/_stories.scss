@@ -1,0 +1,117 @@
+.stories {
+    &__item {
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 2rem;
+        left: 1.4rem;
+        color: $white;
+        width: 88%;
+
+        > h3 {
+            font-size: 1.4rem;
+        }
+
+        > span {
+            border-bottom: 1px solid $white;
+            display: block;
+          
+            width: 100%;
+          }
+
+         .cta {
+             margin-bottom: 0;
+         }
+
+        .read {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: .5rem;
+           
+            > img {
+                width: fit-content;
+                justify-self: center;
+            }
+        
+        }
+    }
+
+    @include breakpoint-up(xlarge) {
+
+   
+
+        &__text {
+
+            > span {
+                width: 100%;
+               
+             }
+        }
+    }
+
+    @include breakpoint-up(large) {
+
+        
+        &__text {
+
+            > span {
+                width: 100%;
+               
+             }
+        }
+    }
+
+
+   
+
+   
+
+    @include breakpoint-down(large) {
+        &__text {
+
+            > span {
+                width: 100%;
+               
+             }
+        }
+    }
+
+
+
+    @include breakpoint-down(medium) {
+        &__text {
+
+            > span {
+                width: 100%;
+               
+             }
+        }
+    }
+
+    @include breakpoint-down(small) {
+        &__text {
+
+            > span {
+                width: 100%;
+               
+             }
+        }
+    }
+
+   
+
+   
+    @include breakpoint-down(xxsmall) {
+        &__text {
+            > span {
+                width: 100%;
+               
+             }
+        }
+    }
+
+}
+

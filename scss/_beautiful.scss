@@ -13,6 +13,16 @@
             line-height: 1.7;
         }
 
+        > a {
+            color: $black;
+        }
+
+        > img {
+            width: 60px;
+            height: 14px;
+            margin-left: 0.7rem;
+        }
+
     }
 
    
@@ -39,9 +49,13 @@
 
     @include breakpoint-up(large) {
         &__content {
-            margin: 3.125rem auto;
+           
             > h1 {
                 font-size: 3rem;
+            }
+
+            > a {
+                color: $black;
             }
         }
 
@@ -54,9 +68,7 @@
     }
 
     @include breakpoint-up(xlarge) {
-        &__content {
-            margin: 6.25rem auto;
-        }
+       
 
         &__col-1 {
             background-image: url(/img/home/desktop/beautiful-stories.jpg);
@@ -91,12 +103,7 @@
 
 
     @include breakpoint-down(medium) {
-        &__content {
-            margin: 3.125rem auto;
-
-           
-
-        }
+       
 
         &__col-1 {
             background-image: url(/img/home/tablet/beautiful-stories.jpg);

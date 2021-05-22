@@ -3,14 +3,9 @@
     position: relative;
 
     &__logo {
-        position: absolute;
-        top: 13px;
-        left: 82px;
-        width: 0;
-        height: 0;
-        border-left: 1.0625rem transparent;
-        border-right: 1.0625rem transparent;
-        border-bottom: 1.0625rem solid hsl(28, 100%, 78%), hsl(329, 36%, 59%), hsl(229, 100%, 68%);
+       
+        width: 12.5rem;
+        height: 1.25rem;
        
      
 
@@ -49,7 +44,7 @@
     &__button {
         background-color: $black;
         color: $white;
-        padding: 0.7rem 2rem;
+        padding: 0.7rem 3rem;
         transition: 0.3s ease-in-out;
 
         &:hover {
