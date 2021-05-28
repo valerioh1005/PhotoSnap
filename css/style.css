@@ -2280,6 +2280,13 @@ img {
 
 .stories__item {
   position: relative;
+  transition: transform .8s ease-in-out;
+  cursor: pointer;
+}
+
+.stories__item:hover {
+  transform: translateY(-10%);
+  z-index: 2;
 }
 
 .stories__item::after {
