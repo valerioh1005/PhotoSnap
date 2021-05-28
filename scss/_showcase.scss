@@ -1,0 +1,31 @@
+.showcase {
+   
+    @include breakpoint-up(medium) {
+       padding: 3.4rem 0;
+
+       &__item {
+           margin: 1.3rem 0;
+       }
+    }
+
+    @include breakpoint-up(large) {
+        padding: 4rem 0;
+        &__item {
+            margin: 2.4rem 0;
+        }
+    }
+
+    @include breakpoint-up(xlarge) {
+        &__item {
+            margin: 3.4rem 0;
+        }
+    }
+
+    @include breakpoint-down(small) {
+        padding: 3rem 1rem;
+
+        &__item {
+            margin: 1.8rem 0;
+        }
+    }
+}

@@ -2,6 +2,7 @@
 
     &__content {
         padding: 6.25rem;
+        position: relative;
 
         >h1 {
             width: 73%;
@@ -23,13 +24,33 @@
             margin-left: 0.7rem;
         }
 
+        &::before {
+            content: "";
+            position: absolute;
+            width: 9rem;
+            height: 5px;
+            left: 4.3125rem;
+            top: 0;
+            background: linear-gradient(45deg, $main);
         }
+
+    }
 
 
 
         @include breakpoint-up(medium) {
             &__content {
                 padding: 3rem;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 20.75rem;
+                    left: -1px;
+                    top: 3.125rem;
+                    background: linear-gradient(45deg, $main);
+                }
             }
 
             &__col-2 {
@@ -43,6 +64,16 @@
         @include breakpoint-up(large) {
             &__content {
                 padding: 2rem;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 9px;
+                    height: 20.75rem;
+                    left: -1px;
+                    top: 3.125rem;
+                    background: linear-gradient(45deg, $main);
+                }
 
             }
 
@@ -59,6 +90,17 @@
         @include breakpoint-up(xlarge) {
             &__content {
                 padding: 4rem;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 20.75rem;
+                    left: -1px;
+                    top: 5.125rem;
+                    background: linear-gradient(45deg, $main);
+                   
+                }
             }
 
             &__col-2 {
@@ -79,6 +121,16 @@
 
                 p {
                     font-size: 1.5rem;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 9px;
+                    height: 29.75rem;
+                    left: -1px;
+                    top: 13.125rem;
+                    background: linear-gradient(45deg, $main);
                 }
             }
 

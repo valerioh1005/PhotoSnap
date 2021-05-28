@@ -1,0 +1,105 @@
+.beta {
+    min-height: 20rem;
+    position: relative;
+
+    &__content {
+        color: $white;
+       
+    }
+
+    @include breakpoint-up(medium) {
+        background-image: url(../img/shared/tablet/bg-beta.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 19.75rem;
+            left: -1px;
+            top: 0.125rem;
+            background: linear-gradient(45deg, #ffc593, #bc7198, #5a77ff);
+        }
+
+
+
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5rem 0.5rem;
+            text-transform: uppercase;
+           
+    
+
+
+            >h1 {
+                letter-spacing: 0.4rem;
+            }
+        }
+
+        &__arrow {
+            >a {
+                color: $white;
+            }
+
+            >img {
+                width: 60px;
+                height: 14px;
+                margin-left: 0.7rem;
+            }
+        }
+    }
+
+    @include breakpoint-down(small) {
+        background-image: url(../img/shared/mobile/bg-beta.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 9rem;
+            height: 5px;
+            left: 4.3125rem;
+            top: 0;
+            background: linear-gradient(45deg, #ffc593, #bc7198, #5a77ff);
+        }
+
+
+
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 0.5rem;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 5rem 0.5rem;
+            text-transform: uppercase;
+
+            >h1 {
+                letter-spacing: 0.4rem;
+            }
+        }
+
+        &__arrow {
+            >a {
+                color: $white;
+            }
+
+            >img {
+                width: 60px;
+                height: 14px;
+                margin-left: 0.7rem;
+                justify-self: start;
+            }
+        }
+    }
+
+    
+}

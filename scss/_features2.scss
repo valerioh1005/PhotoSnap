@@ -1,0 +1,125 @@
+.features2 {
+    
+    &__content {
+        position: relative;
+    }
+    
+    
+
+    @include breakpoint-up(medium) {
+        &__col-1 {
+            padding: 10.6rem 2rem;
+        }
+
+        &__content {
+            >h1 {
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.4rem;
+            }
+
+            >p {
+                opacity: 0.5;
+            }
+
+            &::before {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7.75rem;
+            left: -31px;
+            top: 0.125rem;
+            background: linear-gradient(45deg, #ffc593, #bc7198, #5a77ff);
+            }
+            
+        }
+
+    }
+
+    @include breakpoint-up(large) {
+        &__col-1 {
+            padding: 10.6rem 1.5rem;
+            line-height: 2;
+        }
+
+        &__content {
+            >h1 {
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.4rem;
+            }
+
+            >p {
+                opacity: 0.5;
+            }
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 7px;
+                height: 7.75rem;
+                left: -105px;
+                top: 0.125rem;
+                background: linear-gradient(45deg, #ffc593, #bc7198, #5a77ff);
+                }
+                
+        }
+
+    }
+
+    @include breakpoint-up(xlarge) {
+        &__col-1 {
+            padding: 10.6rem 6.5rem;
+            line-height: 2;
+        }
+
+        &__content {
+            >h1 {
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.4rem;
+            }
+
+            >p {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    @include breakpoint-down(small) {
+        &__col-1 {
+            padding: 3.6rem 1rem;
+            order: 2;
+        }
+
+        &__col-2 {
+            order: 1;
+        }
+    
+        &__content {
+            > h1 {
+               text-transform: uppercase;
+               letter-spacing: 0.4rem;
+            }
+    
+            > p {
+                line-height: 1.8;
+                opacity: 0.5;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 9rem;
+                height: 5px;
+                left: 4.3125rem;
+                top: -3.5rem;
+                background: linear-gradient(45deg, $main);
+            }
+        }
+
+        
+     }
+    
+}
